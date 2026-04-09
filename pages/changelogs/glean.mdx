@@ -1,0 +1,61 @@
+import { Callout } from 'nextra/components'
+
+# Glean Integration: Query Mixpanel Inside Your Enterprise AI
+
+<Callout type="info">
+    This integration is available on all Mixpanel plans at no additional cost.
+</Callout>
+
+Mixpanel is available as an MCP app in Glean Assistant. Ask about conversion rates, retention trends, and feature adoption — and get live Mixpanel data back — without leaving Glean.
+
+## Overview
+
+The people who most need product data aren't always the ones inside an analytics tool. PMs prepping for a review, CS leads investigating churn, and executives asking "how's the new feature doing?" make decisions in tools like Glean, not inside dashboards.
+
+With the Mixpanel + Glean integration, anyone in your organization can query Mixpanel from Glean Assistant and get answers in the same conversation as their Slack threads, Jira tickets, and Google Docs — no separate tab, no query builder required.
+
+![Mixpanel and Glean integration overview](/gleanIntegrationOverview.png)
+
+## What You Can Do
+
+**Root-cause incidents faster.** Ask "conversion dropped last Thursday — what happened?" and get Mixpanel's event-level breakdown alongside the deploy log and the Slack thread about the bug, all in one answer.
+
+**Analyze launches in context.** Ask how a new flow is performing and Glean auto-brackets the right date range based on when it shipped — no manual date-picking required.
+
+**Put data in reach of everyone.** Non-analysts — CS leads, marketing, and executives — can get product metrics in the tools they already live in, without learning the query builder.
+
+## Connect Mixpanel to Glean
+
+Mixpanel is available in Glean's out-of-the-box MCP Apps template library.
+
+1. **Open the Glean connectors directory** in your Glean workspace.
+2. **Search for "Mixpanel"** in the template library.
+3. **Follow the setup instructions** to connect your Mixpanel workspace.
+
+Once connected, your team can start asking Glean Assistant questions about Mixpanel data immediately.
+
+![Glean connectors directory with Mixpanel](/gleanConnectorsDirectory.png)
+
+## Limitations
+
+- This integration surfaces Mixpanel data through Glean's AI assistant. It does not provide access to the full Mixpanel UI or allow users to save reports directly to Mixpanel.
+- Data availability depends on the events and properties already tracked in your Mixpanel project.
+- Access controls follow your existing Mixpanel project permissions.
+
+## FAQ
+
+#### Who can use this integration?
+
+Any user in a Glean workspace where a Mixpanel admin has completed the connector setup. The integration is available on all Mixpanel plans at no additional cost.
+
+#### Does this require a Glean Enterprise plan?
+
+The Mixpanel MCP app is available through Glean's standard MCP Apps template library. Check with your Glean admin for plan-specific availability within Glean.
+
+#### What Mixpanel data can Glean Assistant access?
+
+Glean Assistant can query events, funnels, retention, and feature adoption data from your connected Mixpanel workspace. The exact scope is determined by the permissions granted during setup.
+
+#### Is this different from the Mixpanel API?
+
+Yes. This integration is powered by Glean's MCP (Model Context Protocol) framework, which lets Glean's AI assistant call Mixpanel's data layer as part of a natural language conversation. You don't need to write queries or use the API directly.
